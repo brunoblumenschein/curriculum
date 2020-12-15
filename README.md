@@ -1,27 +1,19 @@
-# Blumenschein
+# Bruno Blumenschein - Meu Currículo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+Este é o código fonte de um projeto Angular 7.3.1 de uma aplicação web que representa o meu currículo. 
 
-## Development server
+Todas as informações são reais, válidas e foram atualizadas pela última vez em: 14/12/2020.
+## Acesso a Aplicação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Esta aplicação pode ser vista em execução através da minha página: [blumensche.in](https://blumensche.in)
+## Código Fonte
 
-## Code scaffolding
+100% deste código fonte foi criado por mim e está disponibilizado como forma de demonstrar meus conhecimentos nas próprias ferramentas de desenvolvimento.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Nesta versão ,a priori, a aplicação é focada em tecnologias front-end:
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* HTML 5;
+* CSS 3;
+* Angular 2+;
+* NPM;
+* Design;
