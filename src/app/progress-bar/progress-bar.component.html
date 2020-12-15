@@ -1,0 +1,16 @@
+<div class="row my-progress-bar"
+     [ngClass]="last ? 'last': ''">
+    <div class="col-md-12">
+        <div class="text">{{progressBar.text}}</div>
+
+        <div class="my-bar"></div>
+
+        <div class="my-progress"
+             [style.width.%]="progressBar.percentage"></div>
+
+        <div class="circle"
+             [style.left]="circlePosition">
+            <div class="percentage">{{progressBar.percentage}}</div>
+        </div>
+    </div>
+</div>

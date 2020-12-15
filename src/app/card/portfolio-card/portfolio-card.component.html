@@ -1,0 +1,27 @@
+<div class="blumen-card">
+    <div class="header">
+        <fa-icon [icon]="icon"
+            [class]="icon.iconName"></fa-icon>
+        Portifólio
+    </div>
+
+    <div class="body">
+
+        <div class="list-item"
+            *ngFor="let item of portfolioItems"
+            (click)="openLink(item.link)">
+            <div class="list-item-icon">
+                <fa-icon [icon]="item.icon"
+                    [class]="item.icon.iconName"></fa-icon>
+            </div>
+
+            <div class="list-item-text">{{item.text}}</div>
+
+            <div class="list-item-link">
+                <fa-icon [icon]="externalLink"
+                    [class]="externalLink.iconName"></fa-icon>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,52 @@
+@import "src/styles.scss";
+
+.row {
+  background-color: $primary-color;
+  color: white;
+}
+
+.contact {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.contact-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.column-icons {
+  flex: 10%;
+}
+
+.column-text {
+  flex: 90%;
+}
+
+@media screen and (max-width: 991px) {
+  .column-icons {
+    flex: 2.5%;
+  }
+
+  .column-text {
+    flex: 97.5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .column-icons {
+    flex: 5%;
+  }
+
+  .column-text {
+    flex: 95%;
+  }
+}
+
+a {
+  color: white;
+}

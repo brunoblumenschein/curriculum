@@ -1,0 +1,63 @@
+@import "src/styles.scss";
+
+$circle_default_size: 28px;
+
+.list-item {
+    color: white;
+    margin-bottom: 10px;
+
+    div {
+        background-color: $primary-color;
+        line-height: $circle_default_size;
+
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .list-item-icon,
+    .list-item-link {
+        background-color: $primary-color;
+
+        width: $circle_default_size;
+        height: $circle_default_size;
+        line-height: $circle_default_size;
+
+        font-size: 16px;
+        border-width: 0px;
+
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .list-item-link {
+        margin-left: -22px;
+        padding-right: 6px;
+    }
+
+    .list-item-text {
+        width: 60vw;
+        overflow: hidden;
+        border-radius: 0px 20px 20px 0px;
+        border-width: 0px;
+        padding-left: 20px;
+
+        &:before {
+            content: " ";
+            left: -93px;
+            top: -14px;
+            position: absolute;
+            width: 100px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: white;
+        }
+    }
+
+    &:hover {
+        color: #0056b3;
+        cursor: pointer;
+    }
+}

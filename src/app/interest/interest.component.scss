@@ -1,0 +1,39 @@
+@import "src/styles.scss";
+
+.flex-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: $primary-color;
+  color: white;
+  font-size: 15px;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.flex-item {
+  flex: 1;
+  text-align: start;
+  flex-basis: 132px;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #006633;
+  display: inline-flex;
+}
+
+.title {
+  margin-left: 25px;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 991px) {
+  .flex-item {
+    flex: 0;
+    text-align: start;
+    flex-basis: 135px;
+  }
+}

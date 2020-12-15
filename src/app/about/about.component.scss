@@ -1,0 +1,21 @@
+@import "src/styles.scss";
+
+.row {
+  background-color: $primary-color;
+  color: white;
+}
+
+.about {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 991px) {
+  .about {
+    text-align: start;
+  }
+}

@@ -1,0 +1,11 @@
+<blumen-section-title [title]="'Interesses'"></blumen-section-title>
+
+<div class="flex-container">
+    <ng-container *ngFor="let item of items">
+        <div class="flex-item">
+            <div class="circle">
+                <span class="title">{{item.title}}</span>
+            </div>
+        </div>
+    </ng-container>
+</div>

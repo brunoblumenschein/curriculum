@@ -1,0 +1,22 @@
+@import "src/styles.scss";
+
+.title {
+  background-color: $light-background-color;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 24px;
+  color: $primary-dark-color;
+  font-weight: 700;
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  -ms-box-shadow: $box-shadow;
+  -o-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+.row {
+  background-color: $primary-color;
+}

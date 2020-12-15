@@ -1,0 +1,39 @@
+<div class="app-root container-fluid">
+    <div class="row">
+
+        <div class="background-primary col col-lg-3">
+
+            <blumen-photo></blumen-photo>
+
+            <blumen-about></blumen-about>
+
+            <blumen-contact></blumen-contact>
+
+            <blumen-capabilities></blumen-capabilities>
+
+            <blumen-interest></blumen-interest>
+
+        </div>
+
+        <div class="col-lg-9">
+
+            <blumen-timeline-card *ngFor="let card of cards"
+                [card]="card"></blumen-timeline-card>
+
+            <blumen-portfolio-card></blumen-portfolio-card>
+
+            <blumen-hobby-card [hobbyCard]="hobbyCard"></blumen-hobby-card>
+
+        </div>
+
+        <ng2-floating-action-menu [placement]="config.placement"
+            [effect]="config.effect"
+            [label]="config.label"
+            [iconClass]="config.iconClass"
+            [activeIconClass]="config.activeIconClass"
+            [toggle]="config.toggle"
+            [buttons]="buttons">
+        </ng2-floating-action-menu>
+
+    </div>
+</div>

@@ -1,0 +1,22 @@
+$primary-color: #5eb660;
+$primary-dark-color: #54a356;
+
+$general-background-color: #e9e9e9;
+$light-background-color: #fcfcfc;
+
+$box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.material-red {
+    background-color: #f44336;
+    border-radius: 50%;
+    color: white;
+}

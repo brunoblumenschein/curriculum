@@ -1,0 +1,25 @@
+@import "src/styles.scss";
+
+$line-color: $primary-color;
+$box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+.blumen-card {
+    .body {
+        fa-icon {
+            font-size: 40px;
+        }
+    }
+}
+
+.flex-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    flex: 1 0 12%;
+    text-align: center;
+    flex-basis: 110px;
+}

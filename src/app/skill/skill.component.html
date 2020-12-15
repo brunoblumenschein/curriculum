@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="text-center title">{{skill.title}}</div>
+    </div>
+</div>
+
+<blumen-progress-bar *ngFor="let bar of skill.bars; last as last"
+                     [progressBar]="bar"
+                     [last]="last"></blumen-progress-bar>

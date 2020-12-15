@@ -1,0 +1,14 @@
+@import "src/styles.scss";
+
+.app-root {
+    background-color: $general-background-color;
+}
+
+.background-primary {
+    background-color: $primary-color;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    -ms-box-shadow: $box-shadow;
+    -o-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}

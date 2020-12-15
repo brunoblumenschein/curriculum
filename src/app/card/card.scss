@@ -1,0 +1,128 @@
+@import "src/styles.scss";
+
+$line-color: $primary-color;
+
+.blumen-card {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    background-color: $light-background-color;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    -ms-box-shadow: $box-shadow;
+    -o-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+
+    .header {
+        background-color: #475965;
+        padding: 10px;
+        padding-left: 19px;
+        color: white;
+        font-size: 25px;
+
+        .graduation-cap {
+            margin-right: 13px;
+        }
+
+        .briefcase {
+            margin-right: 16px;
+            margin-left: 3px;
+        }
+
+        .certificate {
+            margin-left: 3px;
+            margin-right: 16px;
+        }
+
+        .glasses {
+            margin-left: 1px;
+            margin-right: 13px;
+        }
+
+        .heartbeat {
+            margin-left: 2px;
+            margin-right: 18px;
+        }
+    }
+
+    .body {
+        text-align: justify;
+        padding: 20px 65px 20px 20px;
+
+        .item {
+            display: flex;
+
+            .timeline {
+                min-width: 50px;
+                width: 50px;
+
+                .circle {
+                    height: 27px;
+                    width: 27px;
+                    background-color: $line-color;
+                    border-radius: 50%;
+                    display: inline-block;
+                    border: 7px solid #a6d3a5;
+                    position: absolute;
+                }
+
+                .line {
+                    border-left: 3px solid $line-color;
+                    height: 121%;
+                    margin-left: 12px;
+                    margin-top: 8px;
+                    opacity: 0.9;
+                }
+
+                .last-line {
+                    border-left: 3px solid $line-color;
+                    height: 90%;
+                    margin-left: 12px;
+                    margin-top: 8px;
+                    opacity: 0.9;
+                }
+            }
+
+            .content {
+                flex-grow: 1;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #d0d0d0;
+                padding-bottom: 15px;
+
+                .location {
+                    font-weight: 700;
+                    font-size: 17px;
+                }
+
+                .period {
+                    font-weight: 700;
+                    font-style: italic;
+                    font-size: 16px;
+                    text-align: justify;
+                    color: rgb(60, 135, 60);
+                }
+
+                .location-description {
+                    font-size: 15px;
+                    color: #666666;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .item.last {
+            .content {
+                border-bottom: none;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .blumen-card {
+        .body {
+            text-align: start;
+        }
+    }
+}

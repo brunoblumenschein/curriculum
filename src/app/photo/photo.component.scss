@@ -1,0 +1,40 @@
+.row {
+  margin-bottom: 15px;
+}
+
+.photo {
+  text-align: center;
+  position: relative;
+  width: 100%; /* para IE 6 */
+}
+
+.my-photo {
+  content: url("../../assets/photo-800-800.png");
+}
+
+@media only screen and (max-width: 991px) {
+  .my-photo {
+    content: url("../../assets/photo-800-680.png");
+  }
+}
+
+div {
+  .text {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    white-space: pre;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  :first-child {
+    margin-bottom: -8px;
+  }
+}
+
+img {
+  max-width: 100%;
+}

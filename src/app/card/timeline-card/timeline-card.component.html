@@ -1,0 +1,35 @@
+<div class="blumen-card">
+    <div class="header">
+        <fa-icon [icon]="card.icon"
+                 [class]="card.icon.iconName"></fa-icon>
+        {{card.title}}
+    </div>
+
+    <div class="body">
+        <div *ngFor="let content of card.contents; last as last"
+             class="item"
+             [ngClass]="{'last': last}">
+
+            <div class="timeline">
+                <span class="circle"></span>
+                <div [ngClass]="last ? 'last-line' : 'line'"></div>
+            </div>
+
+            <div class="content">
+                <div class="location">
+                    {{content.location}}
+                    <span class="location-description"
+                          *ngIf="content.locationDescription">@{{content.locationDescription}}</span>
+                </div>
+
+                <div class="period">
+                    {{content.initialDate}}
+                    <span *ngIf="content.endDate">- {{content.endDate}}</span>
+                </div>
+
+                <div class="description">{{content.description}}</div>
+            </div>
+
+        </div>
+    </div>
+</div>
