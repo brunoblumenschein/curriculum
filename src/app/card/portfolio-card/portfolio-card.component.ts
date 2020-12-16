@@ -15,7 +15,11 @@ export class PortfolioCardComponent implements OnInit {
 
     portfolioItems: PortfolioCard[] = [
         { icon: faAngular, text: 'Meu Currículo (Web)', link: 'https://github.com/brunoblumenschein/curriculum' },
-        { icon: faFilePdf, text: 'Meu Currículo (Adobe Illustrator)', link: 'https://google.com' },
+        {
+            icon: faFilePdf,
+            text: 'Meu Currículo (Adobe Illustrator)',
+            link: 'https://github.com/brunoblumenschein/curriculum/blob/master/src/assets/curriculum/Curriculum%20Vitae%20-%20Bruno%20Blumenschein.ai'
+        },
     ];
 
     constructor() { }
