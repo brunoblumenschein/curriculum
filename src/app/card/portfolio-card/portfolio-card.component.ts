@@ -1,6 +1,6 @@
 import { IconDefinition, faFolderOpen, faExternalLinkSquareAlt, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { Component, OnInit } from '@angular/core';
-import { faAngular, faJava } from '@fortawesome/free-brands-svg-icons';
+import { faAngular } from '@fortawesome/free-brands-svg-icons';
 import { PortfolioCard } from './portfolio-card.model';
 
 @Component({
@@ -14,7 +14,7 @@ export class PortfolioCardComponent implements OnInit {
     externalLink: IconDefinition = faExternalLinkSquareAlt;
 
     portfolioItems: PortfolioCard[] = [
-        { icon: faAngular, text: 'Meu Currículo (Web)', link: 'https://google.com' },
+        { icon: faAngular, text: 'Meu Currículo (Web)', link: 'https://github.com/brunoblumenschein/curriculum' },
         { icon: faFilePdf, text: 'Meu Currículo (Adobe Illustrator)', link: 'https://google.com' },
     ];
 

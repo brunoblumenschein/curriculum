@@ -1,4 +1,4 @@
-import { faSkype, faWhatsapp, faLinkedinIn, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+import { faSkype, faWhatsapp, faLinkedinIn, IconDefinition, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faHome } from '@fortawesome/free-solid-svg-icons';
 import { Component } from '@angular/core';
 
@@ -18,5 +18,7 @@ export class ContactComponent {
     skypeIcon: IconDefinition = faSkype;
 
     homeIcon: IconDefinition = faHome;
+
+    githubIcon: IconDefinition = faGithub;
 
 }

@@ -20,39 +20,27 @@ import { FloatingActionButton } from 'ng2-floating-action-menu';
     templateUrl: './principal.component.html',
     styleUrls: ['./principal.component.scss']
 })
-export class PrincipalComponent implements OnInit {
+export class PrincipalComponent {
 
-    config;
+    config: any;
 
     buttons: Array<FloatingActionButton> = [
         {
             iconClass: 'fa fa-file-image material-red',
             label: 'PNG',
-            onClick: () => console.log('1')
+            onClick: () => this.openCurriculumDocumentFromAsset('png')
         },
         {
             iconClass: 'fa fa-file-pdf material-red',
             label: 'PDF',
-            onClick: () => console.log('1')
+            onClick: () => this.openCurriculumDocumentFromAsset('pdf')
         },
         {
             iconClass: 'fa fa-file-code material-red',
-            label: 'HTML',
-            onClick: () => console.log('1')
+            label: 'Fonte (Illustrator)',
+            onClick: () => this.openCurriculumDocumentFromAsset('ai')
         },
     ];
-
-    constructor() {
-        this.config = {
-            placement: 'br',
-            effect: 'mfb-slidein-spring',
-            label: 'Exportar',
-            iconClass: 'fa fa-download material-red',
-            activeIconClass: 'fa fa-download material-red',
-            toggle: 'hover',
-            buttons: this.buttons
-        };
-    }
 
     cards: TimelineCard[] = [
         {
@@ -196,6 +184,26 @@ export class PrincipalComponent implements OnInit {
         ]
     };
 
-    ngOnInit() { }
+    constructor() {
+        this.config = {
+            placement: 'br',
+            effect: 'mfb-slidein-spring',
+            label: 'Exportar',
+            iconClass: 'fa fa-download material-red',
+            activeIconClass: 'fa fa-download material-red',
+            toggle: 'hover',
+            buttons: this.buttons
+        };
+    }
+
+    openCurriculumDocumentFromAsset(extension: string) {
+        const link = document.createElement('a');
+        link.setAttribute('type', 'hidden');
+        link.href = `assets/curriculum/Curriculum Vitae - Bruno Blumenschein.${extension}`;
+        link.download = `Curriculum Vitae - Bruno Blumenschein.${extension}`;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+    }
 
 }
